@@ -222,7 +222,7 @@ function closeMobileMenu() {
 // ==========================================
 
 function openWhatsApp() {
-    window.open('https://wa.me/918580641139', '_blank');
+    window.open('https://wa.me/919814105411', '_blank');
 }
 
 function openWhatsAppWithAssignment(data) {
@@ -234,7 +234,7 @@ function openWhatsAppWithAssignment(data) {
         'Deadline: ' + data.deadline + '%0A' +
         'Requirements: ' + data.requirements;
     
-    const whatsappUrl = 'https://wa.me/918580641139?text=' + message;
+    const whatsappUrl = 'https://wa.me/919814105411?text=' + message;
     window.open(whatsappUrl, '_blank');
 }
 
