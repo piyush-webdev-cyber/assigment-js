@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional academic support services for students in Chandigarh, Mohali, and Panchkula. Assignment help, practical files, PPT presentations, and research guidance.">
+    <meta name="keywords" content="assignment help Chandigarh, assignment help Mohali, assignment help Panchkula, academic support, assignment writing service, practical file help, PPT presentation help">
+    <title>Academic Support Services - Assignment Help in Chandigarh, Mohali, Panchkula</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@400;700&family=Dancing+Script:wght@400;700&family=Permanent+Marker&family=Shadows+Into+Light&family=Indie+Flower&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/how-it-works.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/submit-assignment.css">
+    <link rel="stylesheet" href="css/handwritten-generator.css">
+    <link rel="stylesheet" href="css/terms-and-conditions.css">
+    <link rel="stylesheet" href="css/privacy-policy.css">
+    <link rel="stylesheet" href="css/image-editor.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo" data-page="home">
+                    <span class="logo-text">Academic<span class="gradient-text">Support</span></span>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="#home" class="nav-link active" data-page="home">Home</a>
+                    <a href="#how-it-works" class="nav-link" data-page="how-it-works">How It Works</a>
+                    <a href="#services" class="nav-link" data-page="services">Services</a>
+                    <a href="#pricing" class="nav-link" data-page="pricing">Pricing</a>
+                    <a href="#handwritten-generator" class="nav-link" data-page="handwritten-generator">Handwritten Generator</a>
+                    <a href="#image-editor" class="nav-link" data-page="image-editor">Image Editor</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="whatsapp-btn" onclick="openWhatsApp()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        WhatsApp
+                    </button>
+
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="menu-icon">
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="close-icon" style="display: none;">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-nav-link active" data-page="home" onclick="closeMobileMenu()">Home</a>
+            <a href="#how-it-works" class="mobile-nav-link" data-page="how-it-works" onclick="closeMobileMenu()">How It Works</a>
+            <a href="#services" class="mobile-nav-link" data-page="services" onclick="closeMobileMenu()">Services</a>
+            <a href="#pricing" class="mobile-nav-link" data-page="pricing" onclick="closeMobileMenu()">Pricing</a>
+            <a href="#handwritten-generator" class="mobile-nav-link" data-page="handwritten-generator" onclick="closeMobileMenu()">Handwritten Generator</a>
+            <a href="#image-editor" class="mobile-nav-link" data-page="image-editor" onclick="closeMobileMenu()">Image Editor</a>
+            <button class="mobile-whatsapp-btn" onclick="openWhatsApp()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                Contact on WhatsApp
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-background">
+                    <div class="gradient-orb orb-1"></div>
+                    <div class="gradient-orb orb-2"></div>
+                    <div class="gradient-orb orb-3"></div>
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Academic Support
+                            <span class="gradient-text">Excellence</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Professional academic assistance for students in Chandigarh, Mohali, and Panchkula. 
+                            Get expert help with assignments, practical files, presentations, and more.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" onclick="openWhatsApp()">
+                                Get Started on WhatsApp
+                            </button>
+                            <a href="#services" class="btn btn-secondary">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Overview -->
+            <section class="services-overview">
+                <div class="container">
+                    <h2 class="section-title">Our Services</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                </svg>
+                            </div>
+                            <h3>Assignments</h3>
+                            <p>UG/PG level assignments</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                </svg>
+                            </div>
+                            <h3>Practical Files</h3>
+                            <p>Complete practical documentation</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                </svg>
+                            </div>
+                            <h3>PPT Presentations</h3>
+                            <p>Professional slide decks</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                                </svg>
+                            </div>
+                            <h3>Mini Projects</h3>
+                            <p>Complete project solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section class="features">
+                <div class="container">
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span>Expert academic guidance</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span>Timely delivery guaranteed</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span>Affordable pricing</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span>WhatsApp support</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span>Tricity focused service</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span>Reference materials included</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- How It Works Page -->
+        <section id="how-it-works" class="page">
+            <div class="container">
+                <h1 class="page-title">How It Works</h1>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Submit Your Request</h3>
+                        <p>Send us your assignment details via WhatsApp or our submission form</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Get Quote</h3>
+                        <p>We review your requirements and provide a competitive price quote</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Make Payment</h3>
+                        <p>Complete the payment through our secure payment options</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Receive Solution</h3>
+                        <p>Get your completed assignment delivered on time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Page -->
+        <section id="services" class="page">
+            <div class="container">
+                <h1 class="page-title">Our Services</h1>
+                <div class="services-detail-grid">
+                    <div class="service-detail-card">
+                        <h3>Assignment Writing</h3>
+                        <p>Comprehensive assignment help for all subjects and academic levels</p>
+                        <ul>
+                            <li>Research and analysis</li>
+                            <li>Proper formatting and citations</li>
+                            <li>Plagiarism-free content</li>
+                        </ul>
+                    </div>
+                    <div class="service-detail-card">
+                        <h3>Practical Files</h3>
+                        <p>Complete practical documentation with proper observations and conclusions</p>
+                        <ul>
+                            <li>Lab experiments documentation</li>
+                            <li>Technical drawings and diagrams</li>
+                            <li>Results and analysis</li>
+                        </ul>
+                    </div>
+                    <div class="service-detail-card">
+                        <h3>PPT Presentations</h3>
+                        <p>Professional PowerPoint presentations for academic projects</p>
+                        <ul>
+                            <li>Engaging slide designs</li>
+                            <li>Content organization</li>
+                            <li>Visual elements and graphics</li>
+                        </ul>
+                    </div>
+                    <div class="service-detail-card">
+                        <h3>Mini Projects</h3>
+                        <p>Complete mini-project solutions with documentation</p>
+                        <ul>
+                            <li>Project planning and execution</li>
+                            <li>Code implementation</li>
+                            <li>Project reports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Page -->
+        <section id="pricing" class="page">
+            <div class="container">
+                <h1 class="page-title">Pricing</h1>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Basic</h3>
+                        <div class="price">₹299<span>/assignment</span></div>
+                        <ul>
+                            <li>Simple assignments</li>
+                            <li>Basic formatting</li>
+                            <li>3-day delivery</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <h3>Standard</h3>
+                        <div class="price">₹599<span>/assignment</span></div>
+                        <ul>
+                            <li>Complex assignments</li>
+                            <li>Professional formatting</li>
+                            <li>2-day delivery</li>
+                            <li>1 revision included</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Premium</h3>
+                        <div class="price">₹999<span>/assignment</span></div>
+                        <ul>
+                            <li>Advanced projects</li>
+                            <li>Premium formatting</li>
+                            <li>1-day delivery</li>
+                            <li>Unlimited revisions</li>
+                            <li>Priority support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Assignment Page -->
+        <section id="submit-assignment" class="page">
+            <div class="container">
+                <h1 class="page-title">Submit Assignment</h1>
+                <form class="assignment-form" id="assignmentForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">Deadline *</label>
+                        <input type="date" id="deadline" name="deadline" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="requirements">Requirements *</label>
+                        <textarea id="requirements" name="requirements" rows="6" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="file">Upload File (Optional)</label>
+                        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.txt">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Assignment</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Handwritten Generator Page -->
+        <section id="handwritten-generator" class="page">
+            <div class="container">
+                <h1 class="page-title">Handwritten Assignment Generator</h1>
+                <div class="generator-container">
+                    <div class="input-section">
+                        <h3>Enter Your Text</h3>
+                        <textarea id="handwrittenText" placeholder="Type or paste your assignment text here..." rows="10"></textarea>
+                        <div class="font-selector">
+                            <label>Choose Handwriting Style:</label>
+                            <select id="fontStyle">
+                                <option value="Kalam">Kalam</option>
+                                <option value="Caveat">Caveat</option>
+                                <option value="Dancing Script">Dancing Script</option>
+                                <option value="Permanent Marker">Permanent Marker</option>
+                                <option value="Shadows Into Light">Shadows Into Light</option>
+                                <option value="Indie Flower">Indie Flower</option>
+                                <option value="Amatic SC">Amatic SC</option>
+                            </select>
+                        </div>
+                        <div class="controls">
+                            <label>Font Size:</label>
+                            <input type="range" id="fontSize" min="12" max="24" value="16">
+                            <span id="fontSizeValue">16px</span>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-primary" onclick="generateHandwritten()">Generate Handwritten</button>
+                            <button class="btn btn-secondary" onclick="downloadAsPDF()">Download as PDF</button>
+                            <button class="btn btn-secondary" onclick="downloadAsImage()">Download as Image</button>
+                        </div>
+                    </div>
+                    <div class="preview-section">
+                        <h3>Preview</h3>
+                        <div id="handwrittenPreview" class="handwritten-preview">
+                            <p>Your handwritten text will appear here...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terms and Conditions Page -->
+        <section id="terms-and-conditions" class="page">
+            <div class="container">
+                <h1 class="page-title">Terms and Conditions</h1>
+                <div class="legal-content">
+                    <h2>1. Acceptance of Terms</h2>
+                    <p>By using our academic support services, you agree to be bound by these terms and conditions.</p>
+                    
+                    <h2>2. Services Description</h2>
+                    <p>We provide academic guidance and reference materials for educational purposes only.</p>
+                    
+                    <h2>3. User Responsibilities</h2>
+                    <p>Users must ensure that all materials are used as reference and not submitted as original work.</p>
+                    
+                    <h2>4. Payment Terms</h2>
+                    <p>All payments must be completed before delivery of services. Refunds are subject to our refund policy.</p>
+                    
+                    <h2>5. Privacy Policy</h2>
+                    <p>We respect your privacy and handle all personal information according to our privacy policy.</p>
+                    
+                    <h2>6. Disclaimer</h2>
+                    <p>Our services are for academic guidance purposes only. We do not encourage plagiarism or academic misconduct.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Page -->
+        <section id="privacy-policy" class="page">
+            <div class="container">
+                <h1 class="page-title">Privacy Policy</h1>
+                <div class="legal-content">
+                    <h2>1. Information Collection</h2>
+                    <p>We collect information you provide directly to us, such as when you contact us for services.</p>
+                    
+                    <h2>2. Information Use</h2>
+                    <p>We use the information we collect to provide, maintain, and improve our services.</p>
+                    
+                    <h2>3. Information Sharing</h2>
+                    <p>We do not sell, trade, or otherwise transfer your personal information to third parties.</p>
+                    
+                    <h2>4. Data Security</h2>
+                    <p>We implement appropriate security measures to protect your personal information.</p>
+                    
+                    <h2>5. Cookies</h2>
+                    <p>We use cookies to enhance your experience on our website.</p>
+                    
+                    <h2>6. Contact Information</h2>
+                    <p>If you have any questions about this Privacy Policy, please contact us.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Editor Page -->
+        <section id="image-editor" class="page">
+            <div class="container">
+                <h1 class="page-title">Image Editor</h1>
+                <div class="image-editor-container">
+                    <div class="editor-controls">
+                        <div class="control-section">
+                            <h3>Upload Image</h3>
+                            <input type="file" id="imageUpload" accept="image/*" class="file-input">
+                            <button class="btn btn-primary" onclick="document.getElementById('imageUpload').click()">Choose Image</button>
+                        </div>
+
+                        <div class="control-section">
+                            <h3>Basic Adjustments</h3>
+                            <div class="adjustment-control">
+                                <label>Brightness</label>
+                                <input type="range" id="brightness" min="0" max="200" value="100">
+                                <span id="brightnessValue">100%</span>
+                            </div>
+                            <div class="adjustment-control">
+                                <label>Contrast</label>
+                                <input type="range" id="contrast" min="0" max="200" value="100">
+                                <span id="contrastValue">100%</span>
+                            </div>
+                            <div class="adjustment-control">
+                                <label>Saturation</label>
+                                <input type="range" id="saturation" min="0" max="200" value="100">
+                                <span id="saturationValue">100%</span>
+                            </div>
+                            <div class="adjustment-control">
+                                <label>Blur</label>
+                                <input type="range" id="blur" min="0" max="10" value="0">
+                                <span id="blurValue">0px</span>
+                            </div>
+                        </div>
+
+                        <div class="control-section">
+                            <h3>Filters</h3>
+                            <div class="filter-buttons">
+                                <button class="filter-btn" onclick="applyFilter('none')">Original</button>
+                                <button class="filter-btn" onclick="applyFilter('grayscale')">Grayscale</button>
+                                <button class="filter-btn" onclick="applyFilter('sepia')">Sepia</button>
+                                <button class="filter-btn" onclick="applyFilter('invert')">Invert</button>
+                                <button class="filter-btn" onclick="applyFilter('vintage')">Vintage</button>
+                                <button class="filter-btn" onclick="applyFilter('cold')">Cold</button>
+                                <button class="filter-btn" onclick="applyFilter('warm')">Warm</button>
+                            </div>
+                        </div>
+
+                        <div class="control-section">
+                            <h3>Transform</h3>
+                            <div class="transform-buttons">
+                                <button class="transform-btn" onclick="rotateImage(-90)">Rotate Left</button>
+                                <button class="transform-btn" onclick="rotateImage(90)">Rotate Right</button>
+                                <button class="transform-btn" onclick="flipImage('horizontal')">Flip H</button>
+                                <button class="transform-btn" onclick="flipImage('vertical')">Flip V</button>
+                            </div>
+                        </div>
+
+                        <div class="control-section">
+                            <h3>Actions</h3>
+                            <div class="action-buttons">
+                                <button class="btn btn-secondary" onclick="resetImage()">Reset</button>
+                                <button class="btn btn-primary" onclick="downloadImage()">Download</button>
+                                <button class="btn btn-secondary" onclick="copyToClipboard()">Copy to Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="editor-preview">
+                        <div class="canvas-container">
+                            <canvas id="imageCanvas"></canvas>
+                            <div id="placeholder" class="image-placeholder">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19M8.5,13.5L11,16.5L14.5,12L19,18H5M5,5H19V19H5V5Z"/>
+                                </svg>
+                                <p>Upload an image to start editing</p>
+                            </div>
+                        </div>
+                        <div class="image-info">
+                            <div class="info-item">
+                                <label>Size:</label>
+                                <span id="imageSize">-</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Dimensions:</label>
+                                <span id="imageDimensions">-</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Format:</label>
+                                <span id="imageFormat">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        Academic<span class="gradient-text">Support</span>
+                    </h3>
+                    <p class="footer-description">
+                        Professional academic support services for students in Chandigarh, Mohali, and Panchkula. 
+                        We provide guidance and reference materials for academic excellence.
+                    </p>
+                    <div class="footer-disclaimer">
+                        <p>
+                            <strong>Disclaimer:</strong> All services are strictly for academic guidance and reference purposes only. 
+                            We do not encourage plagiarism or academic misconduct.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-page="home">Home</a></li>
+                        <li><a href="#how-it-works" data-page="how-it-works">How It Works</a></li>
+                        <li><a href="#services" data-page="services">Services</a></li>
+                        <li><a href="#pricing" data-page="pricing">Pricing</a></li>
+                        <li><a href="#submit-assignment" data-page="submit-assignment">Submit Assignment</a></li>
+                        <li><a href="#handwritten-generator" data-page="handwritten-generator">Handwritten Generator</a></li>
+                        <li><a href="#image-editor" data-page="image-editor">Image Editor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#terms-and-conditions" data-page="terms-and-conditions">Terms & Conditions</a></li>
+                        <li><a href="#privacy-policy" data-page="privacy-policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="contact-icon">
+                                <path d="M12,2C8.13,2 5,5.13 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9C19,5.13 15.87,2 12,2M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5Z"/>
+                            </svg>
+                            <span>Chandigarh - Mohali - Panchkula</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="contact-icon">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <a href="https://wa.me/917526850997" target="_blank" rel="noopener noreferrer">
+                                +91 75268 50997
+                            </a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="contact-icon">
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            </svg>
+                            <a href="mailto:support@academicsupport.com">support@academicsupport.com</a>
+                        </li>
+                    </ul>
+                    <button class="footer-whatsapp-btn" onclick="openWhatsApp()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        Contact on WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Academic Support. All rights reserved.</p>
+                <p class="footer-note">
+                    Service Area: Chandigarh, Mohali, Panchkula (Tricity)
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/handwritten-generator.js"></script>
+    <script src="js/image-editor.js"></script>
+</body>
+</html>

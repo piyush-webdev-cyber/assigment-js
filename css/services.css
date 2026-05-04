@@ -1,0 +1,70 @@
+/* Services Page */
+#services {
+  padding-top: 100px;
+}
+
+.services-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+.service-detail-card {
+  background: var(--black-light);
+  border: 1px solid rgba(0, 102, 255, 0.2);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+}
+
+.service-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-blue);
+}
+
+.service-detail-card h3 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--white);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.service-detail-card p {
+  color: var(--gray-medium);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.service-detail-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-detail-card li {
+  position: relative;
+  padding-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--gray-medium);
+  font-size: var(--font-size-sm);
+}
+
+.service-detail-card li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .services-detail-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}

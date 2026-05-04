@@ -1,0 +1,76 @@
+/* Submit Assignment Page */
+#submit-assignment {
+  padding-top: 100px;
+}
+
+.assignment-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--black-light);
+  border: 1px solid rgba(0, 102, 255, 0.2);
+  border-radius: 12px;
+  padding: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--white);
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: var(--spacing-sm);
+  background: var(--black-medium);
+  border: 1px solid rgba(0, 102, 255, 0.2);
+  border-radius: 8px;
+  color: var(--white);
+  font-size: var(--font-size-base);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-group input[type="file"] {
+  padding: var(--spacing-xs);
+  background: transparent;
+  border: 2px dashed rgba(0, 102, 255, 0.3);
+  cursor: pointer;
+}
+
+.form-group input[type="file"]:hover {
+  border-color: var(--primary-blue);
+}
+
+.btn-primary {
+  width: 100%;
+  padding: var(--spacing-md);
+  font-size: var(--font-size-lg);
+  margin-top: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .assignment-form {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg);
+  }
+}

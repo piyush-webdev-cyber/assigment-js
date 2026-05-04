@@ -1,0 +1,78 @@
+/* How It Works Page */
+#how-it-works {
+  padding-top: 100px;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+  position: relative;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  padding: var(--spacing-lg);
+  background: var(--black-light);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 102, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-blue);
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto var(--spacing-md);
+  background: var(--gradient-primary);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+}
+
+.step h3 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--white);
+}
+
+.step p {
+  color: var(--gray-medium);
+  line-height: 1.6;
+}
+
+/* Step connector for desktop */
+.steps-container::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: var(--gradient-primary);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .steps-container::before {
+    display: none;
+  }
+  
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}

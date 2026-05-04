@@ -1,0 +1,39 @@
+/* Terms and Conditions Page */
+#terms-and-conditions {
+  padding-top: 100px;
+}
+
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--black-light);
+  border: 1px solid rgba(0, 102, 255, 0.2);
+  border-radius: 12px;
+  padding: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+.legal-content h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+  color: var(--white);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p {
+  color: var(--gray-medium);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .legal-content {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg);
+  }
+}
